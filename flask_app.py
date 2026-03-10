@@ -4,7 +4,7 @@ import yt_dlp
 import os
 
 app = Flask(__name__)
-
+CORS(app)
 @app.route('/info', methods=['GET'])
 def get_info():
     url = request.args.get('url')
