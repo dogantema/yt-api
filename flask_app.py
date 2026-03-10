@@ -1,3 +1,4 @@
+from flask_cors import CORS
 from flask import Flask, request, jsonify
 import yt_dlp
 import os
@@ -38,4 +39,5 @@ def home():
     return jsonify({'status': 'API çalışıyor ✅'})
 
 if __name__ == '__main__':
+
     app.run()
